@@ -1,7 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser')
 const app = express();
-
+require("dotenv").config({ path: "./config.env" });
+const path = require('path');
 
 
   app.use((req, res, next) => {
